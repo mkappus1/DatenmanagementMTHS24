@@ -16,11 +16,11 @@ if response.status_code == 200:
     links = soup.find_all('a', href=True)
     
     # Links in eine Textdatei schreiben
-    with open("links.txt", "w") as file:
+    with open("links-de.txt", "w") as file:
         for link in links:
             href = link['href']
             file.write(href + "\n")
     
-    print("Links wurden erfolgreich in die Datei 'links.txt' geschrieben.")
+    print("Links wurden erfolgreich in die Datei 'links-de.txt' geschrieben.")
 else:
     print(f"Fehler beim Abrufen der Webseite: {response.status_code}")
