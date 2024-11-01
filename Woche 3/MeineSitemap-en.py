@@ -21,6 +21,6 @@ if response.status_code == 200:
             href = link['href']
             file.write(href + "\n")
     
-    print("Links wurden erfolgreich in die Datei 'links.txt' geschrieben.")
+    print("Links wurden erfolgreich in die Datei 'links-en.txt' geschrieben.")
 else:
     print(f"Fehler beim Abrufen der Webseite: {response.status_code}")
