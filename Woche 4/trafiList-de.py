@@ -12,7 +12,7 @@ for idx, url in enumerate(urls, start=1):
         text = trafilatura.extract(downloaded)
         if text:
             # Datei erstellen und Inhalt speichern
-            filename = f'webseite_{idx}.txt'
+            filename = f'webseite_de_{idx}.txt'
             with open(filename, 'w') as output_file:
                 output_file.write(text)
             print(f'Inhalt von {url} wurde in {filename} gespeichert.')
