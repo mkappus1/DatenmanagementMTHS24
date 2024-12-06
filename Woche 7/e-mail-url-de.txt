@@ -1,0 +1,5 @@
+Hallo, bitte kontaktiere mich unter info@example.com für weitere Informationen. Falls du technische Probleme hast, kannst du auch eine E-Mail an support@localhost senden. Unsere Webseite findest du unter https://meine-seite.de, oder einfach unter www.fake-link.org. 
+
+Achtung: Eine E-Mail-Adresse wie user@domain könnte unvollständig sein. Außerdem solltest du www.unsinnige-url, die keine gültige Domain hat, ignorieren. 
+
+Falls du uns anrufen möchtest, kannst du dies über service@example123 tun – das ist natürlich keine echte E-Mail-Adresse. Besuche uns online, z. B. unter https://richtig.toll/page?id=123. Danke!
