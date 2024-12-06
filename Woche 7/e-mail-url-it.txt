@@ -1,0 +1,5 @@
+Ciao, per favore scrivimi a contatti@example.it per maggiori informazioni. Se hai problemi tecnici, prova a inviare un’e-mail a supporto@localhost. Puoi visitare il nostro sito web su https://mio-sito.it oppure cercare www.link-falso.com.
+
+Attenzione: Un indirizzo come utente@dominio potrebbe non essere completo. Inoltre, ignora www.url-nonvalida, che non è un dominio valido.
+
+Se vuoi chiamarci, usa servizio@example123 – chiaramente non è un’e-mail valida. Visita anche la nostra pagina a https://davvero.geniale/pagina?utente=456. Grazie!
