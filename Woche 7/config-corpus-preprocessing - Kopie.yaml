@@ -1,0 +1,92 @@
+MTUOC: /MTUOC
+
+preprocess_type: sentencepiece
+#one of smt sentencepiece subwordnmt
+
+VERBOSE: True
+LOG_FILE: process.log
+DELETE_TEMP: False
+
+corpus: corpus-eng-spa-weights.txt
+from_train_val: False
+train_corpus: train-eng-spa.txt
+val_corpus: val-eng-spa.txt
+valsize: 5000
+evalsize: 5000
+
+SLcode3: eng
+SLcode2: en
+TLcode3: spa
+TLcode2: es
+
+SL_DICT: /MTUOC/eng.dict
+TL_DICT: /MTUOC/spa.dict
+#state None or null.dict if not word form dictionary available for that languages
+
+SL_TOKENIZER: MTUOC_tokenizer_eng.py
+TOKENIZE_SL: False
+TL_TOKENIZER: MTUOC_tokenizer_spa.py
+TOKENIZE_TL: False
+
+###PREPARATION
+REPLACE_EMAILS: True
+EMAIL_CODE: "@EMAIL@"
+REPLACE_URLS: True
+URL_CODE: "@URL@"
+
+TRAIN_SL_TRUECASER: True
+TRAIN_SL_TRUECASER_MAXLINES: 10000000
+#-1 no limit
+TRUECASE_SL: False
+SL_TC_MODEL: auto
+#if auto the name will be tc.+SLcode2
+
+TRAIN_TL_TRUECASER: True
+TRAIN_TL_TRUECASER_MAXLINES: 10000000
+#-1 no limit
+TRUECASE_TL: False
+TL_TC_MODEL: auto
+#if auto the name will be tc.+TLcode2
+
+CLEAN: False
+MIN_TOK: 1
+MAX_TOK: 80
+
+MIN_CHAR: 1
+MAX_CHAR: 1000
+
+#SENTENCE PIECE and SUBWORD NMT
+bos: <s>
+#<s> or None
+eos: </s>
+#</s> or None
+JOIN_LANGUAGES: True
+SPLIT_DIGITS: True
+VOCABULARY_THRESHOLD: 50
+
+#SMT
+REPLACE_NUM: False
+NUM_CODE: "@NUM@"
+
+
+#SENTENCE PIECE
+CONTROL_SYMBOLS: ""
+USER_DEFINED_SYMBOLS: "@EMAIL@,@URL@,<tag0>,<tag1>,<tag2>,<tag3>,<tag4>,<tag5>,<tag6>,<tag7>,<tag8>,<tag9>,<tag10>,<tag11>,<tag12>,<tag13>,<tag14>,<tag15>,<tag16>,<tag17>,<tag18>,<tag19>,<tag20>,<tag21>,<tag22>,<tag23>,<tag24>,<tag25>,<tag26>,<tag27>,<tag28>,<tag29>,<tag30>,</tag0>,</tag1>,</tag2>,</tag3>,</tag4>,</tag5>,</tag6>,</tag7>,</tag8>,</tag9>,</tag10>,<tag11/>,<tag12/>,<tag13/>,<tag14/>,<tag15/>,<tag16/>,<tag17/>,<tag18/>,<tag19/>,<tag20/>,</tag21>,</tag22>,</tag23>,</tag24>,</tag25>,</tag26>,</tag27>,</tag28>,</tag29>,</tag30>"
+SP_MODEL_PREFIX: spmodel
+MODEL_TYPE: bpe
+#one of unigram, bpe, char, word
+VOCAB_SIZE: 32000
+CHARACTER_COVERAGE: 1.0
+CHARACTER_COVERAGE_SL: 1.0
+CHARACTER_COVERAGE_TL: 1.0
+INPUT_SENTENCE_SIZE: 5000000
+
+#SUBWORD NMT
+LEARN_BPE: True
+JOINER: "@@"
+#use one of ￭ or @@
+NUM_OPERATIONS: 85000
+APPLY_BPE: True
+BPE_DROPOUT: True
+BPE_DROPOUT_P: 0.1
+
